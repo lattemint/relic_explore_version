@@ -1,5 +1,5 @@
 {
-    "masterVersionFile":"https://bitbucket.org/LatteMint/re_version/raw/master/dm.version",
+    "masterVersionFile":"https://raw.githubusercontent.com/lattemint/relic_explore_version/main/re.version",
     "modName":"Relic Exploration",
     # The ID of the thread where updates to this mod can be found (optional).
     # This is used to launch directly to the forum thread from in the game.
