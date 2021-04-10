@@ -1,0 +1,37 @@
+The CompForKijinBath Log below:
+System.NullReferenceException: Object reference not set to an instance of an object
+  at VoiceroidAsAnimal.CompForKijinBath.BathingNow () [0x00000] in <e5eedca8682748ab840839ad175aee60>:0 
+  at VoiceroidAsAnimal.CompForKijinBath.PostSpawnSetup (System.Boolean respawningAfterLoad) [0x00018] in <e5eedca8682748ab840839ad175aee60>:0 
+  at Verse.ThingWithComps.SpawnSetup (Verse.Map map, System.Boolean respawningAfterLoad) [0x00020] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at (wrapper dynamic-method) Verse.Pawn.Verse.Pawn.SpawnSetup_Patch1(Verse.Pawn,Verse.Map,bool)
+  at VoiceroidAsAnimal.VAA_ChangeBodyGraphic.SpawnSetup (Verse.Map map, System.Boolean respawningAfterLoad) [0x00000] in <e5eedca8682748ab840839ad175aee60>:0 
+  at (wrapper dynamic-method) Verse.GenSpawn.Verse.GenSpawn.Spawn_Patch1(Verse.Thing,Verse.IntVec3,Verse.Map,Verse.Rot4,Verse.WipeMode,bool)
+  at VoiceroidAsAnimal.IncidentWorker_KotonohaSistersPasses.TryExecuteWorker (RimWorld.IncidentParms parms) [0x00080] in <e5eedca8682748ab840839ad175aee60>:0 
+  at (wrapper dynamic-method) RimWorld.IncidentWorker.RimWorld.IncidentWorker.TryExecute_Patch2(RimWorld.IncidentWorker,RimWorld.IncidentParms)
+  at (wrapper dynamic-method) RimWorld.Storyteller.RimWorld.Storyteller.TryFire_Patch1(RimWorld.Storyteller,RimWorld.FiringIncident)
+  at RimWorld.Storyteller.StorytellerTick () [0x0003a] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at Verse.TickManager.DoSingleTick () [0x00109] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Exception ticking VAA_KotonohaAkane9874999 (at (274, 0, 244)): System.NullReferenceException: Object reference not set to an instance of an object
+  at Verse.Pawn.Tick () [0x00054] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at VoiceroidAsAnimal.VAA_ChangeBodyGraphic.Tick () [0x00000] in <e5eedca8682748ab840839ad175aee60>:0 
+  at Verse.TickList.Tick () [0x0015c] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Repeated Log when spawning Kotonoha Akane:
+
+Exception drawing VAA_KotonohaAkane9876309: System.NullReferenceException: Object reference not set to an instance of an object
+  at Verse.PawnTweener.MovedPercent () [0x00000] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at Verse.PawnTweener.TweenedPosRoot () [0x00021] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at Verse.PawnTweener.ResetTweenedPosToRoot () [0x00000] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at Verse.PawnTweener.PreDrawPosCalculation () [0x0001d] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at Verse.Pawn_DrawTracker.get_DrawPos () [0x00000] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at Verse.Pawn.get_DrawPos () [0x00006] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at Verse.Thing.Draw () [0x00000] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at Verse.ThingWithComps.Draw () [0x00000] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+  at Verse.DynamicDrawManager.DrawDynamicThings () [0x000d8] in <c36f9493c9844ddaa7fb5c788416098f>:0 
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
