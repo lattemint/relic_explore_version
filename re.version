@@ -1,11 +1,11 @@
 {
     "masterVersionFile":"https://raw.githubusercontent.com/lattemint/relic_explore_version/main/re.version",
     "modName":"Relic Exploration",
-    "modThreadId":null,
+    "modThreadId":https://www.fossic.org/thread-2651-1-1.html,
     "modVersion":
     {
         "major":0,
         "minor":1,
-        "patch":"3a preview"
+        "patch":"4a-RC1"
     }
 }
